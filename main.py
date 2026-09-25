@@ -1,6 +1,7 @@
 import pygame
 from logger import log_state
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT
+from player import Player
 
 def main():
     pygame.init()
@@ -18,6 +19,9 @@ def main():
                 return
 
         screen.fill("black")
+
+        player = Player(x= SCREEN_WIDTH / 2, y= SCREEN_HEIGHT / 2)
+        player.draw(screen)
 
         pygame.display.flip()
 
