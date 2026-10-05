@@ -1,8 +1,7 @@
-To make this project work type
+To make this project work first install python
 
-uv sync
+Then insall uv for python use this link https://docs.astral.sh/uv/#highlights
 
-source .venv/bin/activate
+Then type "uv sync" in the terminal in the asteroids folder
 
-This should work without activate
-uv run main.py
+Then type "uv run main.py" in the terminal in the asteroids folder
