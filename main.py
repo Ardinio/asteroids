@@ -1,6 +1,5 @@
 import pygame
 import sys
-import os
 from logger import log_state, log_event
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT, SCORE, SCORE_FONT_SIZE
 from player import Player
@@ -69,8 +68,6 @@ def main():
         pygame.display.flip()
 
         dt = clock.tick(60) / 1000
-
-        
 
     print(f"Starting Asteroids with pygame version {pygame.version.ver}")
     print(f"Screen width: {SCREEN_WIDTH}")
